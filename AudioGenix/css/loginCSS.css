@@ -1,0 +1,80 @@
+body{
+	background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* login box css */
+.login-box {
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 50%; */
+	transform: translate(100%, 60%);   /*login-box position*/
+	width: 400px;
+	height: 250px;
+	padding: 40px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	border-radius: 10px;
+	/* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+   }
+   
+   .login-box .user-box {
+	position: relative;
+   }
+   
+   .login-box .user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+   }
+   
+   .login-box .user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;	
+   }
+
+   
+   /* "username" & "password" click effeccts */
+   .login-box .user-box input:focus ~ label,
+   .login-box .user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #bdb8b8;
+	font-size: 12px;
+   }
+   
+   
+
+   .login-box form a {
+	/* position: relative; */
+	display: inline-block;
+	padding: 10px 20px;
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	/* overflow: hidden; */
+	transition: .5s;
+	margin-top: 40px;
+	letter-spacing: 4px
+   }
+   
+
+   /* Submit button hover effects */
+   .login-box a:hover {
+	background: #567b78;
+	color:rgb(251, 251, 255);
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px #4fb28e
+   }
+   
+  

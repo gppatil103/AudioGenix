@@ -1,0 +1,211 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box; 
+}
+
+.layout{
+	width: 100%;
+	height: 100vh;
+	/* background-image:url('../IMAGE/black-wireless-headphones-yellow-background-top-view-copyspace_72464-589.jpg'); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+}
+
+
+nav{
+	width: 100%;height: 15vh;
+	/* background: rgba(0,0,0,0.2); */
+	background: linear-gradient(to bottom, #898f94, #2c3e50);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	top: 0;
+	left: 0;
+	/* border:5px solid black; */
+}
+
+nav .logo{
+	width: 100%;
+	/* text-align:left; */
+}
+
+.slogo{
+	height: 200px;
+	width: 200px;
+	object-fit: contain;
+
+	/* position: fixed;
+	top: 0;
+	left: 0; */
+}
+
+nav .menu{
+	/* border:5px solid black; */
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav .menu a{
+	width: 25%;
+	text-decoration: none; 
+	color: white;
+	font-weight: bold;	 
+}
+
+main{
+	/* border: 5px solid black; */
+	float: left;
+	height: 100%;
+	width: 500px;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+	text-align: center;
+	color: white;
+	padding-top: 15vh; 
+}
+
+section h3{
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+	padding-top: 30px;
+	/* text-align: right; */
+}
+
+section h1{
+	margin: 30px;  20px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+
+section p{
+	font-size: 25px;
+	color: #eee;
+	white-space: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+section .btnone{
+	/*background: #00b894;*/
+	background: #fff;
+	color: #000;
+}
+.btnone:hover{
+	background: #00b894;
+	color: white; 
+}
+
+section .btntwo{
+	background: #00b894;
+	color: white; 
+}
+
+.btntwo:hover{
+	background: #fff;
+	color: #000;
+}
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #00b894;
+}
+
+@keyframes  changetext{
+	0%{content: "PUNE"}
+	20%{content: "MUMBAI"}
+	35%{content: "DELHI"}
+	60%{content: "AURANGABAD"}
+	80%{content: "NASHIK"}
+	100%{content: "NAGPUR"}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+	
+/* CARDS */
+
+.card {
+	margin-top: 150px;
+	margin: 40px;
+	float: left;
+	width: 190px;
+	height: 254px;
+	border-radius: 20px;
+	background: #f5f5f5;
+	/* background: linear-gradient(to left, #4ecdc4, #556270); */
+	position: relative;
+	padding: 1.8rem;
+	border: 2px solid #c3c6ce;
+	transition: 0.9s ease-out;
+	overflow: visible;
+}
+    
+.card-details {
+	color: black;
+	height: 100%;
+	gap: .5em;
+	display: grid;
+	place-content: center;
+}
+    
+.card-button {
+	transform: translate(-50%, 125%);
+	width: 60%;
+	border-radius: 1rem;
+	border: none;
+	background-color: #008bf8;
+	color: #fff;
+	font-size: 1rem;
+	padding: .5rem 1rem;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	opacity: 0;
+	transition: 0.3s ease-out;
+}
+    
+.text-body {
+	color: #000;
+    }
+    
+/*Text*/
+.text-title {
+	font-size: 1.5em;
+	font-weight: bold;
+    }
+    
+/*Hover*/
+.card:hover {
+	border-color: #00edfe;
+	box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    }
+    
+.card:hover .card-button {
+	transform: translate(-50%, 50%);
+	opacity: 1;
+}
